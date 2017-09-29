@@ -10,8 +10,24 @@ public class OnlineShoppingProcessController {
 	
 	@RequestMapping(value= {"/","/home","/index"})
 	public String showHome(Map<String,Object>map) {
-		map.put("msg", "Welcome to mvc application");
+		map.put("title", "Home");
+		map.put("userClickHome", true);
 		return "home";
 	}
+	
+	@RequestMapping(value= {"/contactUs"})
+	public String contactUs(Map<String,Object>map) {
+		map.put("title", "ContactUs");
+		map.put("userClickContact", true);
+		return "home";
+	}
+	
+	@RequestMapping(value= {"/aboutUs"})
+	public String aboutUs(Map<String,Object>map) {
+		map.put("title", "AboutUs");
+		map.put("userClickAboutUs", true);
+		return "home";
+	}
+
 
 }
