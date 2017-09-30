@@ -12,11 +12,12 @@
 				<li id="home"><a class="nav-link" href="${rootContext}/home">Home
 						<span class="sr-only">(current)</span>
 				</a></li>
+				
+				<li id="listproduct">
+				<a class="nav-link" href="${rootContext}/show/all/products">Product List</a>
+				</li>
 				<li id="about">
 				<a class="nav-link" href="${rootContext}/aboutUs">About</a>
-				</li>
-				<li id="productList">
-				<a class="nav-link" href="${rootContext}/productList">Product List</a>
 				</li>
 				<li id="contact">
 				<a class="nav-link" href="${rootContext}/contactUs">Contact</a>

@@ -58,6 +58,11 @@
 			<c:if test="${userClickContact==true}">
 				<%@include file="contactUs.jsp"%>
 			</c:if>
+			
+			<!-- Display When listProduct is clicked -->
+			<c:if test="${userClickAllproducts==true or userClickCategoryProducts==true}">
+				<%@include file="listproduct.jsp"%>
+			</c:if>
 
 			<!-- Page container -->
 		</div>
@@ -77,6 +82,7 @@
 		<script src="${custom }/myapp.js"></script>
 
 	</div>
+	
 </body>
 
 </html>
